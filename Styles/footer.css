@@ -1,0 +1,74 @@
+.footer_align {
+  background-color: #2479da;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.footer_align .button_align {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+.footer_align img {
+  width: 6vw;
+  height: 4vh;
+}
+.footer_align .section_menu_flex {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  background-color: whitesmoke;
+  z-index: -50;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+}
+.footer_align .section_menu_flex .container_account-name_flex {
+  display: inline-block;
+  background-color: #2479da;
+}
+.footer_align .section_menu_flex .section_menuitems_flex {
+  display: flex;
+  flex-direction: row;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column1_flex .menu-list_item {
+  flex-direction: column;
+  align-content: left;
+  color: black;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column1_flex .menu-list_item .menu-list_subitem {
+  font-size: 10px;
+  color: grey;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column1_flex .menu-list_item .all-programs {
+  align-items: center;
+  text-align: center;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column1_flex .menu-list_item a {
+  display: grid;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column1_flex .menu-list_item a:hover {
+  background-color: #2479da;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container_menu-shortcuts_grid {
+  grid-auto-flow: column;
+  font-weight: bold;
+}
+.footer_align .section_clock_align {
+  position: absolute;
+  right: 0;
+  color: white;
+  padding: 10px;
+}/*# sourceMappingURL=footer.css.map */
