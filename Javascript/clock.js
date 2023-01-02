@@ -16,3 +16,11 @@ const menuButton = document.getElementById("button_align");
     menuButton.addEventListener("click", () => {
       menu.style.display = menu.style.display === "none" ? "flex" : "none";
     });
+
+// const icons = document.querySelector('.icon-1');
+
+// icons.forEach(icon => {
+//   icon.addEventListener('click', () => {
+//     // Open the application associated with the icon here
+//   });
+// });

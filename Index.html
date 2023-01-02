@@ -13,25 +13,63 @@
       <section class="section_wallpaper_align" id="section_wallpaper_align">
         <img src="/Images/windows_xp_2.jpg" />
       </section>
+
+      <!-- footer section -->
       <footer class="footer_align">
+        <!-- Start Button -->
         <button class="button_align" id="button_align" type="button">
           <img src="/Images/start_image.jpg" />
         </button>
+        <!-- Menu Items in the start button -->
         <section class="section_menu_flex" id="section_menu_flex">
-          <div class="container_account-name_flex"><h1>Srilekha</h1></div>
-          <section class="section_menuitems_flex">
-            <div class="container_menu-column1_flex">
-              <div class="menu-list_item">
-                <a href="#"> Internet </a>
-                <span class="menu-list_subitem">Internet Explorer</span>
-                <a href="#"> E-mail </a>
-                <span class="menu-list_subitem">Outlook Express</span>
+          <div class="container_account-name_flex">
+            <div class="image" id="image">
+              <img src="/Images/cmd-exe.png" />
+              <div class="program" id="program">
+                <h1>Srilekha</h1>
               </div>
-              <div class="menu-list_favorites">
-                <a href="#">Command Prompt</a>
-                <a href="#">MSN</a>
-                <a href="#">Windows Media Player</a>
-                <a href="#">Windows Messenger</a>
+            </div>
+          </div>
+          <section class="section_menuitems_flex">
+            <div class="container__menu-column1--flex">
+              <div class="menu__list--items">
+                <div class="label">
+                  <div class="image" id="image">
+                    <img src="/Images/internet_explorer.ico" />
+                  </div>
+                  <div class="intent">Internet</div>
+                  <div class="program">Internet Explorer</div>
+                </div>
+                <div class="label">
+                  <div class="image" id="image">
+                    <img src="/Images/email.ico" />
+                  </div>
+                  <div class="intent">E-mail</div>
+                  <div class="program">Outlook Express</div>
+                </div>
+              </div>
+
+              <div class="menu__list--items2">
+                <div class="menu__list--item">
+                  <div class="image" id="image">
+                    <img src="/Images/cmd-exe.png" />
+                  </div>
+                  <div class="program" id="program">
+                    <a href="#">Command Prompt</a>
+                  </div>
+                </div>
+                <div class="menu__list--item">
+                  <img src="/Images/MSN.ico" />  
+                  <a href="#">MSN</a>
+                </div>
+                <div class="menu__list--item"> 
+                  <img src="/Images/media.ico" />
+                  <a href="#">Windows Media Player</a>
+                </div>
+                <div class="menu__list--item">
+                  <img src="/Images/Help_and_support.ico" />
+                  <a href="#">Windows Messenger</a>
+                </div>
                 <a href="#">Notepad</a>
                 <a href="#">Tour Windows XP</a>
                 <div class="all-programs">
@@ -39,15 +77,53 @@
                 </div>
               </div>
             </div>
-            <div class="container_menu-column2_grid">
-              <a href="#">Menu item 1</a>
-              <a href="#">Menu item 2</a>
-              <a href="#">Menu item 3</a>
+            <div class="container_menu-column2_flex">
+              <div class="container_favorites_flex">
+                <a href="#">My Documents</a>
+                <a href="#">My Recent Documents</a>
+                <div class="menu__list--item">
+                  <img src="/Images/My_pictures.ico" /> 
+                  <a href="#">My Pictures</a>
+                </div>
+                
+                <a href="#">My Music</a>
+                <a href="#">My Computer</a>
+              </div>
+              <div class="container_column2-item_flex">
+                <a href="#">Control Panel</a>
+                <a href="#">Set Program Access and Defaults</a>
+                <a href="#">Printers and Faxes</a>
+                <div class="menu__list--item">
+                  <img src="/Images/Help_and_support.ico" /> 
+                  <a href="#">Help and Support</a>
+                </div>
+                <a href="#">Search</a>
+                <a href="#">Run......</a>
+              </div>
             </div>
           </section>
         </section>
+
+        <!-- clock  -->
         <section class="section_clock_align" id="section_clock_align"></section>
       </footer>
+
+      <!-- Apps in the desktop -->
+      <section class="section__icons--flex">
+        <div class="icon-1" id="icon-1">
+          <img src="/Images/cmd-exe.png" alt="Icon 1" />
+          <p>Icon 1</p>
+        </div>
+        <div class="icon-2" id="icon-2">
+          <img src="/Images/cmd-exe.png" alt="Icon 2" />
+          <p>Icon 2</p>
+        </div>
+        <div class="icon-3" id="icon-3">
+          <img src="/Images/cmd-exe.png" alt="Icon 3" />
+          <p>Icon 3</p>
+        </div>
+        <script src="/Javascript/clock.js"></script>
+      </section>
     </article>
   </body>
   <script src="Javascript\clock.js"></script>

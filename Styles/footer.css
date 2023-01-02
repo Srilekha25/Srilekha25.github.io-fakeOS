@@ -1,3 +1,24 @@
+.section__icons--flex .icon {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+}
+.section__icons--flex .icon img {
+  width: 48px;
+  height: 48px;
+}
+.section__icons--flex .icon p {
+  font-size: 12px;
+  margin: 0;
+  padding: 10px 0;
+}
+
 .footer_align {
   background-color: #2479da;
   position: fixed;
@@ -16,7 +37,7 @@
   margin: 0;
   line-height: 0;
 }
-.footer_align img {
+.footer_align .button_align img {
   width: 6vw;
   height: 4vh;
 }
@@ -28,43 +49,84 @@
   bottom: 100%;
   background-color: whitesmoke;
   z-index: -50;
+  border: 0.1px solid transparent;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow: hidden;
 }
 .footer_align .section_menu_flex .container_account-name_flex {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   background-color: #2479da;
+  padding: 6px;
+  margin: 0;
+  top: 0%;
+  margin-bottom: 1px;
+}
+.footer_align .section_menu_flex .container_account-name_flex .image {
+  display: flex;
+  padding: 5px;
+  margin-right: 10px;
+  width: 5vw;
+  height: 5vh;
+  align-items: center;
+  text-align: center;
+}
+.footer_align .section_menu_flex .container_account-name_flex .image h1 {
+  padding: 5px;
 }
 .footer_align .section_menu_flex .section_menuitems_flex {
   display: flex;
   flex-direction: row;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column1_flex .menu-list_item {
-  flex-direction: column;
-  align-content: left;
+.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex {
+  font-size: 18px;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .image {
+  display: flex;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label {
+  margin-left: 5px;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .intent {
+  font-weight: bold;
   color: black;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column1_flex .menu-list_item .menu-list_subitem {
-  font-size: 10px;
+.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .program {
   color: grey;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column1_flex .menu-list_item .all-programs {
+.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2 .menu__list--item {
+  display: flex;
   align-items: center;
   text-align: center;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column1_flex .menu-list_item a {
-  display: grid;
+.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex ::after .all-programs a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 8px 8px 8px;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex a {
+  font-size: 15px;
+  text-decoration: none;
+  padding: 8px;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_favorites_flex a {
+  font-weight: bold;
+}
+.footer_align .section_menu_flex .section_menuitems_flex a {
+  display: flex;
+  flex-direction: column;
   padding: 12px;
   text-decoration: none;
   color: black;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column1_flex .menu-list_item a:hover {
+.footer_align .section_menu_flex .section_menuitems_flex a:hover {
   background-color: #2479da;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container_menu-shortcuts_grid {
-  grid-auto-flow: column;
-  font-weight: bold;
+.footer_align .section_menu_flex .section_menuitems_flex .menu__list--item {
+  display: flex;
 }
 .footer_align .section_clock_align {
   position: absolute;
