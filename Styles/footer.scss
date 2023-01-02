@@ -1,3 +1,8 @@
+// * > .image{
+//         width: 2px;
+//         height: 2px;
+// }
+
 .section__icons--flex {
   .icon {
     display: flex;
@@ -68,7 +73,7 @@
       top: 0%;
       margin-bottom: 1px;
 
-      .image{
+      .image {
         display: flex;
         padding: 5px;
         margin-right: 10px;
@@ -87,35 +92,35 @@
       flex-direction: row;
 
       .container__menu-column1--flex {
-        
         font-size: 18px;
         .menu__list--items {
-
-          .image{
-            display: flex;
-          }
           .label {
+            display: flex;
             margin-left: 5px;
+            align-items: center;
+            text-align: left;
 
-            .intent {
-              font-weight: bold;
-              color: black;
-            }
-            .program {
-              color: grey;
+            .words {
+              padding: 5px;
+              .intent {
+                font-weight: bold;
+                color: black;
+              }
+              .program {
+                color: grey;
+              }
             }
           }
         }
 
-        .menu__list--items2{
-
+        .menu__list--items2 {
           .menu__list--item {
             display: flex;
             align-items: center;
-            text-align: center;
+            text-align: left;
           }
         }
-    
+
         ::after {
           .all-programs a {
             position: absolute;
@@ -151,8 +156,10 @@
         background-color: #2479da;
       }
 
-      .menu__list--item{
+      .menu__list--item {
         display: flex;
+        align-items: center;
+        text-align: left;
       }
     }
   }

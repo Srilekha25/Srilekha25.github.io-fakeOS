@@ -82,23 +82,26 @@
 .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex {
   font-size: 18px;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .image {
-  display: flex;
-}
 .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label {
+  display: flex;
   margin-left: 5px;
+  align-items: center;
+  text-align: left;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .intent {
+.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .words {
+  padding: 5px;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .words .intent {
   font-weight: bold;
   color: black;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .program {
+.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .words .program {
   color: grey;
 }
 .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2 .menu__list--item {
   display: flex;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex ::after .all-programs a {
   position: absolute;
@@ -127,6 +130,8 @@
 }
 .footer_align .section_menu_flex .section_menuitems_flex .menu__list--item {
   display: flex;
+  align-items: center;
+  text-align: left;
 }
 .footer_align .section_clock_align {
   position: absolute;
