@@ -103,7 +103,13 @@
   align-items: center;
   text-align: left;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex ::after .all-programs a {
+.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2::after .all-programs img {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2::after .all-programs a {
+  color: red;
   position: absolute;
   bottom: 0;
   left: 0;

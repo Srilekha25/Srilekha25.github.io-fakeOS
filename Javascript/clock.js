@@ -8,8 +8,6 @@ function updateClock() {
 setInterval(updateClock, 1000); // Update the clock every second
 
 const menuContainer = document.querySelector('#section_menu_flex');
-
-
 const menuButton = document.getElementById("button_align");
     const menu = document.getElementById("section_menu_flex");
 
@@ -23,4 +21,10 @@ const menuButton = document.getElementById("button_align");
 //   icon.addEventListener('click', () => {
 //     // Open the application associated with the icon here
 //   });
+// });
+
+// $('.screen').click(function(e){
+//   if($(e.target).hasClass('screen')) {
+//     $('#start-menu-active').prop('checked', false);
+//   }
 // });

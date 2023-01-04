@@ -118,18 +118,26 @@
             display: flex;
             align-items: center;
             text-align: left;
+          }&::after {          //check on this later
+            .all-programs {
+  
+              img{
+              display: flex;
+              align-items: center;
+              text-align: left;
+            }
+            a{
+              color: red;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              padding: 0px 8px 8px 8px;
+            }
+            }
           }
         }
 
-        ::after {
-          .all-programs a {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 0px 8px 8px 8px;
-          }
-        }
       }
 
       .container_menu-column2_flex {
