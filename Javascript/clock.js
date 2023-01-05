@@ -15,8 +15,9 @@ const menuButton = document.getElementById("button_align");
       menu.style.display = menu.style.display === "none" ? "flex" : "none";
     });
 
-// const icons = document.querySelector('.icon-1');
-
-//   icons.addEventListener('click', () => {
-//     // Open the application associated with the icon here
-//   });
+    const icon = document.getElementById('icon-1');
+    const section = document.getElementById('section__notepad--textarea');
+    
+    icon.addEventListener('click', function() {
+     section.style.display = section.style.display === 'none' ? "flex" : "none";
+    });
