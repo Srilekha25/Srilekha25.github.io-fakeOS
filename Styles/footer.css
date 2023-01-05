@@ -1,4 +1,7 @@
-.section__icons--flex .icon {
+.screen {
+  position: relative;
+}
+.screen .section__icons--flex .icon {
   display: flex;
   flex-direction: column;
   width: 80px;
@@ -9,17 +12,16 @@
   margin: 10px;
   cursor: pointer;
 }
-.section__icons--flex .icon img {
+.screen .section__icons--flex .icon img {
   width: 48px;
   height: 48px;
 }
-.section__icons--flex .icon p {
+.screen .section__icons--flex .icon p {
   font-size: 12px;
   margin: 0;
   padding: 10px 0;
 }
-
-.footer_align {
+.screen .footer_align {
   background-color: #2479da;
   position: fixed;
   bottom: 0;
@@ -32,16 +34,16 @@
   align-content: flex-start;
   flex-wrap: wrap;
 }
-.footer_align .button_align {
+.screen .footer_align .button_align {
   padding: 0;
   margin: 0;
   line-height: 0;
 }
-.footer_align .button_align img {
+.screen .footer_align .button_align img {
   width: 6vw;
   height: 4vh;
 }
-.footer_align .section_menu_flex {
+.screen .footer_align .section_menu_flex {
   display: none;
   flex-direction: column;
   position: absolute;
@@ -54,8 +56,8 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow: hidden;
 }
-.footer_align .section_menu_flex .container_account-name_flex {
-  display: flex;
+.screen .footer_align .section_menu_flex .container_account-name_flex {
+  display: inline-flex;
   justify-content: space-between;
   background-color: #2479da;
   padding: 6px;
@@ -63,8 +65,8 @@
   top: 0%;
   margin-bottom: 1px;
 }
-.footer_align .section_menu_flex .container_account-name_flex .image {
-  display: flex;
+.screen .footer_align .section_menu_flex .container_account-name_flex .image {
+  display: inline-flex;
   padding: 5px;
   margin-right: 10px;
   width: 5vw;
@@ -72,74 +74,79 @@
   align-items: center;
   text-align: center;
 }
-.footer_align .section_menu_flex .container_account-name_flex .image h1 {
+.screen .footer_align .section_menu_flex .container_account-name_flex .image h1 {
   padding: 5px;
 }
-.footer_align .section_menu_flex .section_menuitems_flex {
-  display: flex;
+.screen .footer_align .section_menu_flex .section_menuitems_flex {
+  display: inline-flex;
   flex-direction: row;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex {
   font-size: 18px;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label {
   display: flex;
   margin-left: 5px;
   align-items: center;
   text-align: left;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .words {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .words {
   padding: 5px;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .words .intent {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .words .intent {
   font-weight: bold;
   color: black;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .words .program {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .words .program {
   color: grey;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2 .menu__list--item {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items:hover {
+  background-color: #2479da;
+}
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2 .menu__list--item {
   display: flex;
   align-items: center;
   text-align: left;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2::after .all-programs img {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2::after .all-programs img {
   display: flex;
   align-items: center;
   text-align: left;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2::after .all-programs a {
-  color: red;
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2::after .all-programs a {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 0px 8px 8px 8px;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex a {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex {
+  background-color: rgb(204, 203, 203);
+}
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex a {
   font-size: 15px;
   text-decoration: none;
   padding: 8px;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_favorites_flex a {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_favorites_flex a {
   font-weight: bold;
 }
-.footer_align .section_menu_flex .section_menuitems_flex a {
+.screen .footer_align .section_menu_flex .section_menuitems_flex a {
   display: flex;
   flex-direction: column;
   padding: 12px;
   text-decoration: none;
   color: black;
 }
-.footer_align .section_menu_flex .section_menuitems_flex a:hover {
+.screen .footer_align .section_menu_flex .section_menuitems_flex a:hover {
   background-color: #2479da;
 }
-.footer_align .section_menu_flex .section_menuitems_flex .menu__list--item {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .menu__list--item {
   display: flex;
   align-items: center;
   text-align: left;
 }
-.footer_align .section_clock_align {
+.screen .footer_align .section_clock_align {
   position: absolute;
   right: 0;
   color: white;

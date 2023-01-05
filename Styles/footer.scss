@@ -3,6 +3,9 @@
 //         height: 2px;
 // }
 
+.screen{
+  position: relative;
+
 .section__icons--flex {
   .icon {
     display: flex;
@@ -65,7 +68,7 @@
     overflow: hidden;
 
     .container_account-name_flex {
-      display: flex;
+      display: inline-flex;
       justify-content: space-between;
       background-color: #2479da;
       padding: 6px;
@@ -74,7 +77,7 @@
       margin-bottom: 1px;
 
       .image {
-        display: flex;
+        display: inline-flex;
         padding: 5px;
         margin-right: 10px;
         width: 5vw;
@@ -88,7 +91,7 @@
     }
 
     .section_menuitems_flex {
-      display: flex;
+      display: inline-flex;
       flex-direction: row;
 
       .container__menu-column1--flex {
@@ -110,6 +113,8 @@
                 color: grey;
               }
             }
+          }&:hover{
+            background-color: #2479da;
           }
         }
 
@@ -127,7 +132,7 @@
               text-align: left;
             }
             a{
-              color: red;
+          
               position: absolute;
               bottom: 0;
               left: 0;
@@ -141,7 +146,8 @@
       }
 
       .container_menu-column2_flex {
-        //background-color: grey;
+        
+        background-color: rgb(204, 203, 203);
         a {
           font-size: 15px;
           text-decoration: none;
@@ -178,4 +184,5 @@
     color: white;
     padding: 10px;
   }
+}
 }

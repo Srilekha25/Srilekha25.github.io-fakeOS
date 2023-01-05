@@ -17,14 +17,6 @@ const menuButton = document.getElementById("button_align");
 
 // const icons = document.querySelector('.icon-1');
 
-// icons.forEach(icon => {
-//   icon.addEventListener('click', () => {
+//   icons.addEventListener('click', () => {
 //     // Open the application associated with the icon here
 //   });
-// });
-
-// $('.screen').click(function(e){
-//   if($(e.target).hasClass('screen')) {
-//     $('#start-menu-active').prop('checked', false);
-//   }
-// });
