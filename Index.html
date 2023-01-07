@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="/Styles/footer.css" />
     <link rel="stylesheet" href="/Styles/icon-styles.css" />
     <script defer src="/Javascript/clock.js"></script>
+    <!-- <script defer src="/Javascript/temperature-convertor.js"></script> -->
     <title>Windows OS</title>
   </head>
   <body>
-    <div class="screen">
+    <div class="screen" id="screen">
       <article class="landing-page">
         <section class="section_wallpaper_align" id="section_wallpaper_align">
           <img src="/Images/windows_xp_2.jpg" />
@@ -150,19 +151,20 @@
 
         <!-- Apps on the desktop -->
         <section class="section__icons--flex">
-          <div class="icon-1" id="icon-1">
+          <div class="icon" id="icon-1">
             <img src="/Images/cmd-exe.png" alt="Icon 1" />
-            <p>Notepad</p>
-          </div>
-          <div class="icon-2" id="icon-2">
-            <img src="/Images/cmd-exe.png" alt="Icon 2" />
             <p>Temperature Convertor</p>
           </div>
-          <div class="icon-3" id="icon-3">
+          <div class="icon" id="icon-2">
+            <img src="/Images/cmd-exe.png" alt="Icon 2" />
+            <p>Notepad</p>
+          </div>
+          <div class="icon" id="icon-3">
             <img src="/Images/cmd-exe.png" alt="Icon 3" />
             <p>Icon 3</p>
           </div>
         </section>
+
         <!-- Notepad -->
         <section
           class="section__notepad--textarea"
@@ -171,29 +173,46 @@
           <textarea class="textarea">Write something</textarea>
           <button class="close">X</button>
         </section>
-        <!-- Temperature Converter -->
-        <section class="section__temp-convertor--form">
-          <h1>Temperature Converter</h1>
-          <div class="container__celcius">
-            <label for="usr">Celcius:</label>
-            <input
-              type="number"
-              class="container__temp-convertor--form"
-              id="celcius"
-              onkeyup="celciusToFahrenheit()"
-            />
+
+        <!-- Temperature Convertor -->
+        <form
+          class="section__temp-convertor--form"
+          id="section__temp-convertor--form"
+        >
+          <div
+            class="container__temp-convertor-content--flex"
+            id="container__temp-convertor-content--flex"
+          >
+            <p>Temperature Convertor</p>
+            <span class="span__close--align" id="span__close--align"
+              >&times;</span
+            >
+            <div>
+              <label for="Temperature">Temperature: </label>
+              <input
+                type="number"
+                name="Temperature"
+                class="Temperature"
+                id="Temperature"
+              />
+            </div>
+
+            <div>
+              <label>How do you want to change the temperature?</label>
+              <select
+                id="Convertor"
+                name="Convertor"
+                class="Convertor"
+                required
+              >
+                <option value="celcius" id="celcius">celcius</option>
+                <option value="fahrenheit" id="fahrenheit">fahrenheit</option>
+              </select>
+            </div>
+            <button type="submit" class="submit">submit</button>
           </div>
-          <div class="container__Fahrenheit">
-            <label for="pwd">Fahrenheit:</label>
-            <input
-              type="number"
-              class="container__temp-convertor--form"
-              id="fahrenheit"
-              onkeyup="fahrenheitToCelcius()"
-            />
-          </div>
-          <button type="submit">submit</button>
-        </section>
+          <div class="message" id="message"></div>
+        </form>
       </article>
     </div>
   </body>

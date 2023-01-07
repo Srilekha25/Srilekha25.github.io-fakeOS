@@ -6,31 +6,57 @@
   flex-direction: column;
   width: 80px;
   height: 80px;
-  border: 1px solid #ccc;
+  border: 1px solid transparent;
   border-radius: 5px;
   text-align: center;
   margin: 10px;
   cursor: pointer;
+  z-index: 1;
 }
 .screen .section__icons--flex .icon img {
   width: 48px;
   height: 48px;
 }
 .screen .section__icons--flex .icon p {
+  display: inline-flex;
   font-size: 12px;
   margin: 0;
   padding: 10px 0;
 }
-.screen .section__notepad--textarea {
-  display: flex;
-}
-.screen .close {
+.screen .section__temp-convertor--form {
   display: none;
 }
-.screen .section__temp-convertor--form {
+.screen .section__temp-convertor--form--display-mode {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
+  visibility: visible;
+}
+.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+}
+.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex h1 {
+  text-align: left;
+  top: 0%;
+  margin: 0%;
+  padding: 1px;
+}
+.screen .section__temp-convertor--form .span__close--align {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.screen .section__temp-convertor--form .span__close--align:hover,
+.screen .section__temp-convertor--form .span__close--align:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: red;
 }
 .screen .footer_align {
   background-color: #2479da;
@@ -61,7 +87,7 @@
   left: 0;
   bottom: 100%;
   background-color: whitesmoke;
-  z-index: -50;
+  z-index: 1;
   border: 0.1px solid transparent;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
