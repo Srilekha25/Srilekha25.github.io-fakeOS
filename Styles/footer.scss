@@ -31,6 +31,19 @@
   }
 }
 
+.section__notepad--textarea{
+  display:flex;
+}
+.close{
+  display: none;
+}
+
+.section__temp-convertor--form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .footer_align {
   background-color: #2479da;
   position: fixed;
@@ -126,10 +139,10 @@
           }&::after {          //check on this later
             .all-programs {
   
-              img{
               display: flex;
-              align-items: center;
-              text-align: left;
+              img{
+              //align-items: center;
+              text-align: right;
             }
             a{
           

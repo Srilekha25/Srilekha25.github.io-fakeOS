@@ -21,6 +21,17 @@
   margin: 0;
   padding: 10px 0;
 }
+.screen .section__notepad--textarea {
+  display: flex;
+}
+.screen .close {
+  display: none;
+}
+.screen .section__temp-convertor--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .screen .footer_align {
   background-color: #2479da;
   position: fixed;
@@ -108,10 +119,11 @@
   align-items: center;
   text-align: left;
 }
-.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2::after .all-programs img {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2::after .all-programs {
   display: flex;
-  align-items: center;
-  text-align: left;
+}
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2::after .all-programs img {
+  text-align: right;
 }
 .screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2::after .all-programs a {
   position: absolute;
