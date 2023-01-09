@@ -325,15 +325,20 @@
             }
           }
           .container_column2-item_flex {
+            margin-left: 2px;
+            padding: 5px;
             .menu__list--item {
               display: flex;
-              margin-left: 2px;
-              padding: 5px;
-            }
-            .text {
-              color: black;
               padding: 3px;
+              .text {
+                color: black;
+                padding: 3px;
+              }  &:hover {
+                background-color: #2479da;
+              }
             }
+           
+           
           }
         }
       }

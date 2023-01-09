@@ -286,14 +286,20 @@
 .screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_favorites_flex .menu__list--item:hover {
   background-color: #2479da;
 }
-.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_column2-item_flex .menu__list--item {
-  display: flex;
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_column2-item_flex {
   margin-left: 2px;
   padding: 5px;
 }
-.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_column2-item_flex .text {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_column2-item_flex .menu__list--item {
+  display: flex;
+  padding: 3px;
+}
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_column2-item_flex .menu__list--item .text {
   color: black;
   padding: 3px;
+}
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_column2-item_flex .menu__list--item:hover {
+  background-color: #2479da;
 }
 .screen .footer_align .section_clock_align {
   position: absolute;
