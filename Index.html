@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="/Styles/footer.css" />
     <link rel="stylesheet" href="/Styles/icon-styles.css" />
     <script defer src="/Javascript/clock.js"></script>
-    <!-- <script defer src="/Javascript/temperature-convertor.js"></script> -->
+    <script defer src="/Javascript/temperature-convertor.js"></script>
+    <script defer src="/Javascript/image-resizer.js"></script>
+    <script defer src="/Javascript/notepad.js"></script>
     <title>Windows OS</title>
   </head>
   <body>
@@ -60,31 +62,31 @@
                 <div class="menu__list--items2">
                   <div class="menu__list--item">
                     <img src="/Images/cmd-exe.png" />
-                    <a href="#">Command Prompt</a>
+                    <div class="text" id="text">Command Prompt</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/MSN.ico" />
-                    <a href="#">MSN</a>
+                    <div class="text" id="text">MSN</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/media.ico" />
-                    <a href="#">Windows Media Player</a>
+                    <div class="text" id="text">Windows Media Player</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/Windows Messenger.ico" />
-                    <a href="#">Windows Messenger</a>
+                    <div class="text" id="text">Windows Messenger</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/Notepad.ico" />
-                    <a href="#">Notepad</a>
+                    <div class="text" id="text">Notepad</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/Tour windows XP.ico" />
-                    <a href="#">Tour Windows XP</a>
+                    <div class="text" id="text">Tour Windows XP</div>
                   </div>
 
                   <div class="all-programs">
-                    <a href="#">All Programs</a>
+                    <div class="text" id="text">All Programs</div>
                     <img src="/Images/All Programs.ico" />
                   </div>
                 </div>
@@ -93,49 +95,60 @@
                 <div class="container_favorites_flex">
                   <div class="menu__list--item">
                     <img src="/Images/My Documents.ico" />
-                    <a href="#">My Documents</a>
+                    <div class="text" id="text">My Documents</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/My Recent Documents.ico" />
-                    <a href="#">My Recent Documents</a>
+                    <div class="text" id="text">My Recent Documents</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/My_pictures.ico" />
-                    <a href="#">My Pictures</a>
+
+                    <div class="text" id="text">My Pictures</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/My Music.ico" />
-                    <a href="#">My Music</a>
+
+                    <div class="text" id="text">My Music</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/My Computer.ico" />
-                    <a href="#">My Computer</a>
+
+                    <div class="text" id="text">My Computer</div>
                   </div>
                 </div>
                 <div class="container_column2-item_flex">
                   <div class="menu__list--item">
                     <img src="/Images/Control Panel.ico" />
-                    <a href="#">Control Panel</a>
+
+                    <div class="text" id="text">Control Panel</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/Set program access.ico" />
-                    <a href="#">Set Program Access and Defaults</a>
+
+                    <div class="text" id="text">
+                      Set Program Access and Defaults
+                    </div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/Printers and faxs.ico" />
-                    <a href="#">Printers and Faxes</a>
+
+                    <div class="text" id="text">Printers and Faxes</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/Help_and_support.ico" />
-                    <a href="#">Help and Support</a>
+
+                    <div class="text" id="text">Help and Support</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/Search.ico" />
-                    <a href="#">Search</a>
+
+                    <div class="text" id="text">Search</div>
                   </div>
                   <div class="menu__list--item">
                     <img src="/Images/Run.ico" />
-                    <a href="#">Run......</a>
+
+                    <div class="text" id="text">Run......</div>
                   </div>
                 </div>
               </div>
@@ -152,26 +165,17 @@
         <!-- Apps on the desktop -->
         <section class="section__icons--flex">
           <div class="icon" id="icon-1">
-            <img src="/Images/cmd-exe.png" alt="Icon 1" />
+            <img src="/Images/temp-conv-icon.jpg" alt="Icon 1" />
             <p>Temperature Convertor</p>
           </div>
           <div class="icon" id="icon-2">
-            <img src="/Images/cmd-exe.png" alt="Icon 2" />
+            <img src="/Images/notepad-icon-desktop.webp" alt="Icon 2" />
             <p>Notepad</p>
           </div>
           <div class="icon" id="icon-3">
-            <img src="/Images/cmd-exe.png" alt="Icon 3" />
+            <img src="/Images/image-resizer-icon.svg" alt="Icon 3" />
             <p>Image Resizer</p>
           </div>
-        </section>
-
-        <!-- Notepad -->
-        <section
-          class="section__notepad--textarea"
-          id="section__notepad--textarea"
-        >
-          <textarea class="textarea">Write something</textarea>
-          <button class="close">X</button>
         </section>
 
         <!-- Temperature Convertor -->
@@ -183,11 +187,14 @@
             class="container__temp-convertor-content--flex"
             id="container__temp-convertor-content--flex"
           >
-            <p>Temperature Convertor</p>
-            <span class="span__close--align" id="span__close--align"
-              >X</span
-            >
-            <div>
+            <div class="section__temp-convertor--title">
+              Temperature Convertor
+              <button class="button__close--align" id="button__close--align">
+                &times;
+              </button>
+            </div>
+
+            <div class="section__temp-convertor--align">
               <label for="Temperature">Temperature: </label>
               <input
                 type="number"
@@ -195,9 +202,7 @@
                 class="Temperature"
                 id="Temperature"
               />
-            </div>
 
-            <div>
               <label>How do you want to change the temperature?</label>
               <select
                 id="Convertor"
@@ -210,24 +215,64 @@
               </select>
             </div>
             <button type="submit" class="submit">submit</button>
+
+            <div class="message" id="message"></div>
           </div>
-          <div class="message" id="message"></div>
+        </form>
+
+        <!-- Notepad -->
+        <form class="section__notepad--form" id="section__notepad--form">
+          <textarea class="textarea" id="textarea"></textarea>
+          <button class="button__close--align" id="button__close--align">
+            &times;
+          </button>
         </form>
 
         <!-- Image Resizer -->
-        <!-- <form class = "section__Image-Resizer--form">
-          <input type="file" class="resizer__file">
-          <div class="dimensions">
-            <input type="text" class="resizer__input resizer__input--width" value="0">
-            x
-            <input type="text" class="resizer__input resizer__input--height" value="0">
-            <label>
-              <input type="checkbox" class="resizer__aspect" checked>
-              Keep Aspect Ratio
-            </label>
+        <form
+          class="section__image-resizer--form"
+          id="section__image-resizer--form"
+        >
+          <div
+            class="section__image-resizer--flex"
+            id="section__image-resizer--flex"
+          >
+            <button class="button__close--align" id="button__close--align">
+              &times;
+            </button>
+            <input type="file" class="resizer__file" id="resizer__file" />
+            <div class="dimensions">
+              <input
+                type="text"
+                class="resizer__input resizer__input--width"
+                id="resizer__input resizer__input--width"
+                value="0"
+              />
+              x
+              <input
+                type="text"
+                class="resizer__input resizer__input--height"
+                id="resizer__input resizer__input--height"
+                value="0"
+              />
+              <label>
+                <input
+                  type="checkbox"
+                  class="resizer__aspect"
+                  id="resizer__aspect"
+                  checked
+                />
+                Keep Aspect Ratio
+              </label>
+            </div>
+            <canvas
+              class="resizer__canvas"
+              id="resizer__canvas"
+              width="500"
+              height="500"
+            ></canvas>
           </div>
-          <canvas class="resizer__canvas" width="500" height="500"></canvas>
-        </form> -->
+        </form>
       </article>
     </div>
   </body>

@@ -34,51 +34,120 @@
 }
 .screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex {
   background-color: #fefefe;
-  padding: 20px;
-  border: 1px solid #888;
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0%;
   left: 0%;
 }
-.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex h1 {
-  text-align: left;
+.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex .section__temp-convertor--title {
   top: 0%;
-  margin: 0%;
-  padding: 1px;
+  left: 0%;
   background-color: #2479da;
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  margin-bottom: 5px;
 }
-.screen .section__temp-convertor--form .span__close--align {
+.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex .section__temp-convertor--title .button__close--align {
+  color: #aaaaaa;
+  float: right;
+  font-size: 23px;
+  font-weight: bold;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+}
+.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex .section__temp-convertor--title .button__close--align:hover,
+.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex .section__temp-convertor--title .button__close--align:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: red;
+}
+.screen .section__temp-convertor--form--display-mode .section__temp-convertor--align {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  align-items: center;
+}
+.screen .section__temp-convertor--form--display-mode .section__temp-convertor--align .submit {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.screen .section__notepad--form {
+  display: none;
+}
+.screen .section__notepad--form--display-mode .textarea {
+  background-color: #fefefe;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+.screen .section__notepad--form--display-mode .button__close--align {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
   position: fixed;
   top: 0%;
-  right: 0;
+  right: 0%;
 }
-.screen .section__temp-convertor--form .span__close--align:hover,
-.screen .section__temp-convertor--form .span__close--align:focus {
+.screen .section__notepad--form--display-mode .button__close--align:hover,
+.screen .section__notepad--form--display-mode .button__close--align:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
   background-color: red;
 }
-.screen .resizer {
+.screen .section__image-resizer--form {
+  display: none;
+}
+.screen .section__image-resizer--form--display-mode .section__image-resizer--flex {
+  background-color: #fefefe;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+.screen .section__image-resizer--form--display-mode .section__image-resizer--flex .button__close--align {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+}
+.screen .section__image-resizer--form--display-mode .section__image-resizer--flex .button__close--align:hover,
+.screen .section__image-resizer--form--display-mode .section__image-resizer--flex .button__close--align:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: red;
+}
+.screen .section__image-resizer--form--display-mode .section__image-resizer--flex .resizer {
   font-family: sans-serif;
   font-weight: bold;
   padding: 20px;
   width: 500px;
 }
-.screen .dimensions {
+.screen .section__image-resizer--form--display-mode .section__image-resizer--flex .dimensions {
   padding: 20px 0;
 }
-.screen .resizer__input {
+.screen .section__image-resizer--form--display-mode .section__image-resizer--flex .resizer__input {
   width: 75px;
   padding: 5px;
 }
-.screen .resizer__canvas {
+.screen .section__image-resizer--form--display-mode .section__image-resizer--flex .resizer__canvas {
   max-width: 100%;
 }
 .screen .footer_align {
@@ -160,55 +229,71 @@
 .screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label .words .program {
   color: grey;
 }
-.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items:hover {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items .label:hover {
   background-color: #2479da;
 }
 .screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2 .menu__list--item {
   display: flex;
   align-items: center;
   text-align: left;
+  margin-left: 5px;
+  padding: 5px;
+}
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2 .menu__list--item .text {
+  color: black;
+  padding: 5px;
+}
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2 .menu__list--item:hover {
+  background-color: #2479da;
 }
 .screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2 .all-programs {
-  display: grid;
-  grid-template-columns: 1fr 1fr !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
 }
 .screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2 .all-programs a {
-  color: red;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   padding: 0px 8px 8px 8px;
+}
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container__menu-column1--flex .menu__list--items2 .all-programs:hover {
+  background-color: #2479da;
 }
 .screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex {
   background-color: rgb(204, 203, 203);
-}
-.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex a {
-  font-size: 15px;
-  text-decoration: none;
-  padding: 8px;
-}
-.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_favorites_flex a {
-  font-weight: bold;
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
 }
 .screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex img {
   width: 1.5rem;
   height: 1.5rem;
 }
-.screen .footer_align .section_menu_flex .section_menuitems_flex a {
-  display: flex;
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_favorites_flex {
+  display: inline-flex;
   flex-direction: column;
-  padding: 12px;
-  text-decoration: none;
-  color: black;
+  margin-left: 2px;
+  padding: 5px;
 }
-.screen .footer_align .section_menu_flex .section_menuitems_flex a:hover {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_favorites_flex .menu__list--item {
+  display: inline-flex;
+  padding: 3px;
+}
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_favorites_flex .menu__list--item .text {
+  font-weight: bold;
+  padding: 3px;
+}
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_favorites_flex .menu__list--item:hover {
   background-color: #2479da;
 }
-.screen .footer_align .section_menu_flex .section_menuitems_flex .menu__list--item {
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_column2-item_flex .menu__list--item {
   display: flex;
-  align-items: center;
-  text-align: left;
+  margin-left: 2px;
+  padding: 5px;
+}
+.screen .footer_align .section_menu_flex .section_menuitems_flex .container_menu-column2_flex .container_column2-item_flex .text {
+  color: black;
+  padding: 3px;
 }
 .screen .footer_align .section_clock_align {
   position: absolute;
