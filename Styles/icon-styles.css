@@ -80,31 +80,24 @@
 .landing-page .section__notepad--form--display-mode {
   display: flex;
   justify-content: center;
-  align-items: center;
   z-index: 1;
 }
-.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--title {
-  background-color: #2479da;
-  font-size: 21px;
-  padding: 4px;
-  color: white;
-  justify-content: space-between;
-}
-.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--title .button__close--align {
+.landing-page .section__notepad--form--display-mode .section__icon2--header .button__close--align {
   color: #aaaaaa;
   float: right;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: bold;
 }
-.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--title .button__close--align:hover,
-.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--title .button__close--align:focus {
+.landing-page .section__notepad--form--display-mode .section__icon2--header .button__close--align:hover,
+.landing-page .section__notepad--form--display-mode .section__icon2--header .button__close--align:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
   background-color: red;
 }
-.landing-page .section__notepad--form--display-mode .container__notepad-content--flex .textarea {
+.landing-page .section__notepad--form--display-mode .textarea {
   background-color: #fefefe;
+  border: 1px solid #888;
   width: 50vw;
   height: 50vh;
   align-items: center;

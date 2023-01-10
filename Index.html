@@ -16,14 +16,21 @@
   <body>
     <div class="screen" id="screen">
       <article class="landing-page">
-        <section class="section__wallpaper--align" id="section__wallpaper--align">
+        <section
+          class="section__wallpaper--align"
+          id="section__wallpaper--align"
+        >
           <img id="section__background--image" src="/Images/windows_xp_2.jpg" />
         </section>
 
         <!-- footer section -->
         <footer class="section__footer--align">
           <!-- Start Button -->
-          <button class="section__start-button--align" id="section__start-button--align" type="button">
+          <button
+            class="section__start-button--align"
+            id="section__start-button--align"
+            type="button"
+          >
             <img src="/Images/start_image.jpg" />
           </button>
           <!-- Menu Items in the start button -->
@@ -39,24 +46,24 @@
             <section class="section__menuitems--flex">
               <div class="container__menuitems-column1--flex">
                 <!-- <div class="menu__list--items"> -->
-                  <div class="label">
-                    <div class="image" id="image">
-                      <img src="/Images/internet_explorer.ico" />
-                    </div>
-                    <div class="words">
-                      <div class="intent">Internet</div>
-                      <div class="program">Internet Explorer</div>
-                    </div>
+                <div class="label">
+                  <div class="image" id="image">
+                    <img src="/Images/internet_explorer.ico" />
                   </div>
-                  <div class="label">
-                    <div class="image" id="image">
-                      <img src="/Images/email.ico" />
-                    </div>
-                    <div class="words">
-                      <div class="intent">E-mail</div>
-                      <div class="program">Outlook Express</div>
-                    </div>
+                  <div class="words">
+                    <div class="intent">Internet</div>
+                    <div class="program">Internet Explorer</div>
                   </div>
+                </div>
+                <div class="label">
+                  <div class="image" id="image">
+                    <img src="/Images/email.ico" />
+                  </div>
+                  <div class="words">
+                    <div class="intent">E-mail</div>
+                    <div class="program">Outlook Express</div>
+                  </div>
+                </div>
                 <!-- </div> -->
 
                 <div class="menu__list--items">
@@ -187,14 +194,12 @@
             class="container__temp-convertor-content--flex"
             id="container__temp-convertor-content--flex"
           >
-          <div class="section__icon1--header">
-            <div class="section__icon1--title">
-              Temperature Convertor
+            <div class="section__icon1--header">
+              <div class="section__icon1--title">Temperature Convertor</div>
+              <button class="button__close--align" id="button__close--align">
+                &times;
+              </button>
             </div>
-            <button class="button__close--align" id="button__close--align">
-              &times;
-            </button>
-          </div>
 
             <div class="section__temp-convertor--align">
               <label for="Temperature">Temperature: </label>
@@ -220,26 +225,24 @@
               <button type="submit">submit</button>
             </div>
 
-            <div class="message" id="message">
-            </div>
+            <div class="message" id="message"></div>
           </div>
         </form>
 
         <!-- Notepad -->
         <form class="section__notepad--form" id="section__notepad--form">
-          
           <div class="section__icon2--header">
-            <div class="section__icon2--title">
-              Notepad
-              <button class="button__close--align" id="button__close--align"> &times;
-              </button>
-            </div> 
-            
+            <!-- <div class="section__icon2--title">Notepad</div> -->
+            <button class="button__close--align" id="button__close--align">
+              &times;
+            </button>
           </div>
-          <div class="container__notepad-content--flex">
-            <textarea class="textarea" id="textarea"></textarea>   
+          <div >
+            <textarea class="textarea" id="textarea"></textarea>
           </div>
         </form>
+
+        <form class="section__notepad--form" id="section__notepad--form">
 
         <!-- Image Resizer -->
         <form
@@ -250,15 +253,12 @@
             class="section__image-resizer--flex"
             id="section__image-resizer--flex"
           >
-
-          <div class="section__icon3--header">
-            <div class="section__icon3--title">
-              Image Resizer
+            <div class="section__icon3--header">
+              <div class="section__icon3--title">Image Resizer</div>
+              <button class="button__close--align" id="button__close--align">
+                &times;
+              </button>
             </div>
-            <button class="button__close--align" id="button__close--align">
-              &times;
-            </button>
-          </div>
 
             <input type="file" class="resizer__file" id="resizer__file" />
             <div class="dimensions">
