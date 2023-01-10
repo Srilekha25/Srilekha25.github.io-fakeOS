@@ -19,9 +19,13 @@ This project done using design/image using CSS, add content via HTML and control
 
 ### HTML/SCSS
 
--   Apps look consistent
--   Menu contains a flex with content inside it
--   Apps should be able to contain text, an image or a form
+-   Apps look consistent and there are three apps
+        1. Image Resizer
+        2. Temperature Convertor 
+        3. Notepad
+-   Enabled dragability for the forms. 
+-   Menu contains a flex with content inside it.
+-   Apps are able to contain text, an image and a form.
 
 ### JavaScript
 
@@ -33,4 +37,4 @@ This project done using design/image using CSS, add content via HTML and control
 -   Created a repo on github.
         Here's the link for github repo 'https://github.com/Srilekha25/fakeOS.git'
 -   The project is hosted using the github pages
-        Here's the link https://fakeOS.github.io
+        Here's the link https://github.com/Srilekha25/fakeOS/index.html
