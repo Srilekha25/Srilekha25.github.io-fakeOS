@@ -4,13 +4,12 @@
 .landing-page .section__icons--flex .icon {
   display: flex;
   flex-direction: column;
-  border: 1px solid transparent;
   margin: 10px;
   cursor: pointer;
 }
 .landing-page .section__icons--flex .icon img {
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
 }
 .landing-page .section__icons--flex .icon p {
   font-size: 15px;
@@ -27,6 +26,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
+  position: absolute;
 }
 .landing-page .section__temp-convertor--form--display-mode .section__icon1--header .section__icon1--title {
   background-color: #2479da;
@@ -103,7 +103,7 @@
   cursor: pointer;
   background-color: red;
 }
-.landing-page .section__notepad--form--display-mode .section__icon2--header .textarea {
+.landing-page .section__notepad--form--display-mode .container__notepad-content--flex .textarea {
   background-color: #fefefe;
   width: 50vw;
   height: 50vh;
@@ -113,6 +113,7 @@
   display: none;
 }
 .landing-page .section__image-resizer--form--display-mode {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;

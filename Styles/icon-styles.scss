@@ -4,15 +4,13 @@
     .icon {
       display: flex;
       flex-direction: column;
-      border: 1px solid transparent;
       margin: 10px;
       cursor: pointer;
-      //z-index: 1;
     }
 
     .icon img {
-      width: 48px;
-      height: 48px;
+      width: 3rem;
+      height: 3rem;
     }
 
     .icon p {
@@ -33,6 +31,7 @@
       align-items: center;
       justify-content: center;
       z-index: 1;
+      position: absolute;
 
       .section__icon1--header {
         .section__icon1--title {
@@ -94,6 +93,7 @@
       justify-content: center;
       align-items: center;
       z-index: 1;
+      //position: absolute;
 
       .section__icon2--header {
         .section__icon2--title {
@@ -116,6 +116,8 @@
             background-color: red;
           }
         }
+      }
+      .container__notepad-content--flex {
         .textarea {
           background-color: #fefefe;
           width: 50vw;
@@ -133,6 +135,7 @@
     display: none;
 
     &--display-mode {
+      position: absolute;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -177,8 +180,8 @@
           padding: 20px;
           width: 500px;
         }
-        .resizer__file{
-            margin-left: 40%;
+        .resizer__file {
+          margin-left: 40%;
         }
 
         .dimensions {
