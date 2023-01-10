@@ -1,3 +1,6 @@
+.landing-page {
+  position: relative;
+}
 .landing-page .section__icons--flex .icon {
   display: flex;
   flex-direction: column;
@@ -25,9 +28,7 @@
   justify-content: center;
   z-index: 1;
 }
-.landing-page .section__temp-convertor--form--display-mode .section__icon1--header .section__temp-convertor--title {
-  top: 0%;
-  left: 0%;
+.landing-page .section__temp-convertor--form--display-mode .section__icon1--header .section__icon1--title {
   background-color: #2479da;
   font-size: 20px;
   padding: 5px;
@@ -76,70 +77,79 @@
 .landing-page .section__notepad--form {
   display: none;
 }
-.landing-page .section__notepad--form--display-mode .section__notepad--title {
-  top: 0%;
-  left: 0%;
-  width: 100vw;
-  height: 100vh;
+.landing-page .section__notepad--form--display-mode {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--title {
   background-color: #2479da;
   font-size: 20px;
   padding: 5px;
   color: black;
-  margin-bottom: 5px;
+  justify-content: space-between;
 }
-.landing-page .section__notepad--form--display-mode .textarea {
-  background-color: #fefefe;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-}
-.landing-page .section__notepad--form--display-mode .button__close--align {
+.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--title .button__close--align {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
-  position: fixed;
-  top: 0%;
-  right: 0%;
 }
-.landing-page .section__notepad--form--display-mode .button__close--align:hover,
-.landing-page .section__notepad--form--display-mode .button__close--align:focus {
+.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--title .button__close--align:hover,
+.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--title .button__close--align:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
   background-color: red;
+}
+.landing-page .section__notepad--form--display-mode .section__icon2--header .textarea {
+  background-color: #fefefe;
+  width: 50vw;
+  height: 50vh;
+  align-items: center;
 }
 .landing-page .section__image-resizer--form {
   display: none;
 }
 .landing-page .section__image-resizer--form--display-mode {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
-.landing-page .section__image-resizer--form--display-mode .section__image-resizer--flex {
-  background-color: #fefefe;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0%;
-  left: 0%;
+.landing-page .section__image-resizer--form--display-mode .section__icon3--title {
+  background-color: #2479da;
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  margin-bottom: 25px;
 }
-.landing-page .section__image-resizer--form--display-mode .section__image-resizer--flex .button__close--align {
+.landing-page .section__image-resizer--form--display-mode .button__close--align {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 23px;
   font-weight: bold;
-  position: fixed;
+  position: absolute;
   top: 0%;
   right: 0%;
 }
-.landing-page .section__image-resizer--form--display-mode .section__image-resizer--flex .button__close--align:hover,
-.landing-page .section__image-resizer--form--display-mode .section__image-resizer--flex .button__close--align:focus {
+.landing-page .section__image-resizer--form--display-mode .button__close--align:hover,
+.landing-page .section__image-resizer--form--display-mode .button__close--align:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
   background-color: red;
+}
+.landing-page .section__image-resizer--form--display-mode .section__image-resizer--flex {
+  background-color: #fefefe;
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  margin-top: 20%;
+  overflow: auto;
 }
 .landing-page .section__image-resizer--form--display-mode .section__image-resizer--flex .resizer {
   font-family: sans-serif;
@@ -147,7 +157,11 @@
   padding: 20px;
   width: 500px;
 }
+.landing-page .section__image-resizer--form--display-mode .section__image-resizer--flex .resizer__file {
+  margin-left: 40%;
+}
 .landing-page .section__image-resizer--form--display-mode .section__image-resizer--flex .dimensions {
+  text-align: center;
   padding: 20px 0;
 }
 .landing-page .section__image-resizer--form--display-mode .section__image-resizer--flex .resizer__input {

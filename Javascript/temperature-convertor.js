@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
   const temperatureUnit = document.querySelector("#Convertor").value;
   const messageInHtml = document.getElementById("message");
   messageInHtml.replaceChildren("");
- messageArr=[];
+  messageArr=[];
 
 
   if (

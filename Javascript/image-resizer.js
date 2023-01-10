@@ -70,13 +70,11 @@ let imageResizerflex = document.getElementById("section__image-resizer--flex");
 
 ImageResizer.addEventListener("click", () => {
   console.log("coming inside image resizer when icon is clicked");
-  //imageResizerModal.style.display="block";
   imageResizerModal.classList.add("section__image-resizer--form--display-mode");
 });
 
 //Close the Image Resizer when X is clicked
 document.getElementById("button__close--align").addEventListener("click", () => {
-  //imageResizerModal.style.display="none";
   imageResizerModal.classList.remove("section__image-resizer--form--display-mode");
 });
 

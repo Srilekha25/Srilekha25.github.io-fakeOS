@@ -191,7 +191,7 @@
             id="container__temp-convertor-content--flex"
           >
           <div class="section__icon1--header">
-            <div class="section__temp-convertor--title">
+            <div class="section__icon1--title">
               Temperature Convertor
             </div>
             <button class="button__close--align" id="button__close--align">
@@ -215,8 +215,8 @@
                 class="Convertor"
                 required
               >
-                <option value="celcius" id="celcius">celcius</option>
-                <option value="fahrenheit" id="fahrenheit">fahrenheit</option>
+                <option value="celcius" id="celcius">Celcius</option>
+                <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
               </select>
             </div>
             <div class="submit">
@@ -230,13 +230,15 @@
 
         <!-- Notepad -->
         <form class="section__notepad--form" id="section__notepad--form">
-          <div class="section__notepad--title">
-            Notepad
+          
+          <div class="section__icon2--header">
+            <div class="section__icon2--title">
+              Notepad
+              <button class="button__close--align" id="button__close--align"> &times;
+              </button>
+            </div> 
+            <textarea class="textarea" id="textarea"></textarea>   
           </div>
-          <textarea class="textarea" id="textarea"></textarea>
-          <button class="button__close--align" id="button__close--align">
-            &times;
-          </button>
         </form>
 
         <!-- Image Resizer -->
@@ -248,9 +250,16 @@
             class="section__image-resizer--flex"
             id="section__image-resizer--flex"
           >
+
+          <div class="section__icon3--header">
+            <div class="section__icon3--title">
+              Image Resizer
+            </div>
             <button class="button__close--align" id="button__close--align">
               &times;
             </button>
+          </div>
+
             <input type="file" class="resizer__file" id="resizer__file" />
             <div class="dimensions">
               <input

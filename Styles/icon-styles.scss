@@ -1,14 +1,10 @@
-.landing-page{
-
-    .section__icons--flex {
+.landing-page {
+  position: relative;
+  .section__icons--flex {
     .icon {
       display: flex;
       flex-direction: column;
-    //   width: 80px;
-    //   height: 80px;
       border: 1px solid transparent;
-      //border-radius: 5px;
-      //text-align: center;
       margin: 10px;
       cursor: pointer;
       //z-index: 1;
@@ -28,7 +24,7 @@
   }
 
   //Styles for Temperature Convertor
-.section__temp-convertor--form {
+  .section__temp-convertor--form {
     display: none;
 
     &--display-mode {
@@ -37,47 +33,38 @@
       align-items: center;
       justify-content: center;
       z-index: 1;
-      
 
-      .section__icon1--header{
-
-        .section__temp-convertor--title {
-            top: 0%;
-            left: 0%;
-            background-color: #2479da;
-            font-size: 20px;
-            padding: 5px;
-            color: white;
-            margin-bottom: 25px;            
-          }
-
-          .button__close--align {
-            color: #aaaaaa;
-            float: right;
-            font-size: 23px;
-            font-weight: bold;
-            position: absolute;
-            top: 0%;
-            right: 0%;
-          }
-          .button__close--align:hover,
-          .button__close--align:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-            background-color: red;
-          }
-
+      .section__icon1--header {
+        .section__icon1--title {
+          background-color: #2479da;
+          font-size: 20px;
+          padding: 5px;
+          color: white;
+          margin-bottom: 25px;
+        }
+        .button__close--align {
+          color: #aaaaaa;
+          float: right;
+          font-size: 23px;
+          font-weight: bold;
+          position: absolute;
+          top: 0%;
+          right: 0%;
+        }
+        .button__close--align:hover,
+        .button__close--align:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+          background-color: red;
+        }
       }
-
-      
-
       .container__temp-convertor-content--flex {
         background-color: #fefefe;
         border: 1px solid #888;
         width: 50vw;
         height: 50vh;
-        position:absolute;
+        position: absolute;
         margin-top: 20%;
         align-items: center;
 
@@ -92,57 +79,52 @@
           text-align: center;
           margin-bottom: 20px;
         }
-        .message{
-            text-align: center;
+        .message {
+          text-align: center;
         }
       }
     }
   }
   //Styles for notepad
   .section__notepad--form {
-   display: none;
-   
+    display: none;
 
     &--display-mode {
-      
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
 
-      .section__notepad--title {
-        top: 0%;
-        left: 0%;
-        width: 100vw;
-        height: 100vh;
-        background-color: #2479da;
-        font-size: 20px;
-        padding: 5px;
-        color: black;
-        margin-bottom: 5px;
-
-        
-      }
-      .textarea {
-        background-color: #fefefe;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0%;
-        left: 0%;
-      }
-
-      .button__close--align {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        position: fixed;
-        top: 0%;
-        right: 0%;
-      }
-      .button__close--align:hover,
-      .button__close--align:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-        background-color: red;
+      .section__icon2--header {
+        .section__icon2--title {
+          background-color: #2479da;
+          font-size: 20px;
+          padding: 5px;
+          color: black;
+          justify-content: space-between;
+          .button__close--align {
+            color: #aaaaaa;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+          }
+          .button__close--align:hover,
+          .button__close--align:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: red;
+          }
+        }
+        .textarea {
+          background-color: #fefefe;
+          width: 50vw;
+          height: 50vh;
+          //position: absolute;
+          //margin-top: 20%;
+          align-items: center;
+        }
       }
     }
   }
@@ -153,29 +135,42 @@
 
     &--display-mode {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+
+      .section__icon3--title {
+        background-color: #2479da;
+        font-size: 20px;
+        padding: 5px;
+        color: white;
+        margin-bottom: 25px;
+      }
+      .button__close--align {
+        color: #aaaaaa;
+        float: right;
+        font-size: 23px;
+        font-weight: bold;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+      }
+      .button__close--align:hover,
+      .button__close--align:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: red;
+      }
+
       .section__image-resizer--flex {
         background-color: #fefefe;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0%;
-        left: 0%;
-        .button__close--align {
-          color: #aaaaaa;
-          float: right;
-          font-size: 28px;
-          font-weight: bold;
-          position: fixed;
-          top: 0%;
-          right: 0%;
-        }
-        .button__close--align:hover,
-        .button__close--align:focus {
-          color: #000;
-          text-decoration: none;
-          cursor: pointer;
-          background-color: red;
-        }
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+        margin-top: 20%;
+        overflow: auto;
 
         .resizer {
           font-family: sans-serif;
@@ -183,8 +178,12 @@
           padding: 20px;
           width: 500px;
         }
+        .resizer__file{
+            margin-left: 40%;
+        }
 
         .dimensions {
+          text-align: center;
           padding: 20px 0;
         }
 
