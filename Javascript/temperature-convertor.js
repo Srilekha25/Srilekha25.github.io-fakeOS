@@ -66,6 +66,7 @@ TempConvertorIcon.addEventListener("click", () => {
 document
   .getElementById("button__close--align")
   .addEventListener("click", () => {
+
     tempConvertorModal.classList.remove(
       "section__temp-convertor--form--display-mode"
     );
