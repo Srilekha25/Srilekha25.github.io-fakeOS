@@ -1,3 +1,5 @@
+//Styles for Icons on desktop
+
 .screen {
   position: relative;
 
@@ -28,6 +30,8 @@
     }
   }
 
+  //Styles for Temperature Convertor
+
   .section__temp-convertor--form {
     display: none;
 
@@ -35,11 +39,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       z-index: -75;
+
+      
 
       .container__temp-convertor-content--flex {
         background-color: #fefefe;
-        //border: 1px solid #888;
+        border: 1px solid #888;
         width: 100vw;
         height: 100vh;
         position: fixed;
@@ -55,33 +62,36 @@
           color: white;
           margin-bottom: 5px;
 
-          .button__close--align {
-            color: #aaaaaa;
-            float: right;
-            font-size: 23px;
-            font-weight: bold;
-            position: fixed;
-            top: 0%;
-            right: 0%;
-          }
-          .button__close--align:hover,
-          .button__close--align:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-            background-color: red;
-          }
+          
         }
-      }
 
-      .section__temp-convertor--align {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        row-gap: 10px;
-        padding: 10px;
-        border: 1px solid black;
-        border-radius: 10px;
-        align-items: center;
+        .section__temp-convertor--align {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          row-gap: 10px;
+          padding: 10px;
+          border: 1px solid transparent;
+          border-radius: 10px;
+          justify-items: start;
+        }
+
+        .button__close--align {
+          color: #aaaaaa;
+          float: right;
+          font-size: 23px;
+          font-weight: bold;
+          position: absolute;
+          top: 0%;
+          right: 0%;
+        }
+        .button__close--align:hover,
+        .button__close--align:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+          background-color: red;
+        }
+
         .submit {
           display: flex;
           justify-content: space-around;
@@ -91,10 +101,27 @@
       }
     }
   }
-
+  //Styles for notepad
   .section__notepad--form {
-    display: none;
+   display: none;
+   
+
     &--display-mode {
+      
+
+      .section__notepad--title {
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+        height: 100vh;
+        background-color: #2479da;
+        font-size: 20px;
+        padding: 5px;
+        color: black;
+        margin-bottom: 5px;
+
+        
+      }
       .textarea {
         background-color: #fefefe;
         width: 100vw;
@@ -122,6 +149,7 @@
       }
     }
   }
+  //Styles for Image Resizer
 
   .section__image-resizer--form {
     display: none;
@@ -175,6 +203,7 @@
     }
   }
 
+  //Styles for footer
   .footer_align {
     background-color: #2479da;
     position: fixed;
@@ -333,12 +362,11 @@
               .text {
                 color: black;
                 padding: 3px;
-              }  &:hover {
+              }
+              &:hover {
                 background-color: #2479da;
               }
             }
-           
-           
           }
         }
       }

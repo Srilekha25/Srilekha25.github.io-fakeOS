@@ -6,7 +6,7 @@ let notepadModal = document.getElementById("section__notepad--form");
 
 notepadIcon.addEventListener("click", () => {
   console.log("coming inside notepad when icon is clicked");
-  //notepadModal.style.display="block";
+  notepadModal.style.display="flex";
   notepadModal.classList.add("section__notepad--form--display-mode");
 });
 

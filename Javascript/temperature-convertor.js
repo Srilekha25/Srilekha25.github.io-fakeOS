@@ -13,11 +13,18 @@ form.addEventListener("submit", (event) => {
 
   const temperatureInput = document.querySelector("#Temperature").value.trim();
   const temperatureUnit = document.querySelector("#Convertor").value;
+  const messageInHtml = document.getElementById("message");
+  messageInHtml.replaceChildren("");
+ messageArr=[];
 
 
-  if (isNaN(temperatureInput) || temperatureInput <= 0) {
+  if (
+    (isNaN(temperatureInput) ||
+    temperatureInput <= 0) ||
+    temperatureInput === ""
+  ) {
     messageArr.push(
-      `${temperatureInput} is not equal to number or less than zero. Please enter correct values`
+      "Please enter the correct temperature values you want to convert before submitting"
     );
     appendElementWithText("div", messageArr, message);
   } else if (temperatureUnit === "fahrenheit") {
@@ -34,7 +41,13 @@ form.addEventListener("submit", (event) => {
     appendElementWithText("div", messageArr, message);
   }
   document.querySelector("#Temperature").value = "";
-  const deleteEverything = document.querySelector("#message");
+  // messageArr.pop();
+  // const deleteEverything = document.querySelector("#message");
+  // const notasks = document.querySelector("#notasks");
+  // if (notasks) {
+  //   deleteEverything.removeChild(notasks);
+  // }
+  //messageInHtml.style.display="none";
 });
 function fahrenheitToCelcius(fahrenheit) {
   return ((fahrenheit - 32) * 5) / 9;
@@ -46,17 +59,23 @@ function celciusToFahrenheit(celcius) {
 
 //Display the temperature convertor when icon is clicked
 let TempConvertorIcon = document.getElementById("icon-1");
-let tempConvertorModal = document.getElementById("section__temp-convertor--form");
+let tempConvertorModal = document.getElementById(
+  "section__temp-convertor--form"
+);
 
 TempConvertorIcon.addEventListener("click", () => {
-  console.log("coming in on icon once clicked");
-  // tempConvertorModal.classList.toggle("section__temp-convertor--form--display-mode");
-  tempConvertorModal.classList.add("section__temp-convertor--form--display-mode");
+  tempConvertorModal.classList.add(
+    "section__temp-convertor--form--display-mode"
+  );
 });
 
 //Close the temperature convertor when X is clicked
-document.getElementById("button__close--align").addEventListener("click", () => {
-  tempConvertorModal.classList.remove("section__temp-convertor--form--display-mode");
-});
+document
+  .getElementById("button__close--align")
+  .addEventListener("click", () => {
+    tempConvertorModal.classList.remove(
+      "section__temp-convertor--form--display-mode"
+    );
+  });
 
 //End of Temperature Convertor

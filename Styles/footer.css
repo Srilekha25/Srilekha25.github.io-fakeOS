@@ -30,10 +30,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   z-index: -75;
 }
 .screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex {
   background-color: #fefefe;
+  border: 1px solid #888;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -49,32 +51,32 @@
   color: white;
   margin-bottom: 5px;
 }
-.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex .section__temp-convertor--title .button__close--align {
+.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex .section__temp-convertor--align {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 10px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  justify-items: start;
+}
+.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex .button__close--align {
   color: #aaaaaa;
   float: right;
   font-size: 23px;
   font-weight: bold;
-  position: fixed;
+  position: absolute;
   top: 0%;
   right: 0%;
 }
-.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex .section__temp-convertor--title .button__close--align:hover,
-.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex .section__temp-convertor--title .button__close--align:focus {
+.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex .button__close--align:hover,
+.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex .button__close--align:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
   background-color: red;
 }
-.screen .section__temp-convertor--form--display-mode .section__temp-convertor--align {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  row-gap: 10px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 10px;
-  align-items: center;
-}
-.screen .section__temp-convertor--form--display-mode .section__temp-convertor--align .submit {
+.screen .section__temp-convertor--form--display-mode .container__temp-convertor-content--flex .submit {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -82,6 +84,17 @@
 }
 .screen .section__notepad--form {
   display: none;
+}
+.screen .section__notepad--form--display-mode .section__notepad--title {
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2479da;
+  font-size: 20px;
+  padding: 5px;
+  color: black;
+  margin-bottom: 5px;
 }
 .screen .section__notepad--form--display-mode .textarea {
   background-color: #fefefe;
