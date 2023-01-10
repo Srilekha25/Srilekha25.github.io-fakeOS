@@ -35,6 +35,6 @@ This project done using design/image using CSS, add content via HTML and control
 ### Github
 
 -   Created a repo on github.
-        Here's the link for github repo 'https://github.com/Srilekha25/fakeOS.git'
+        Here's the link for github repo https://github.com/Srilekha25/Srilekha25.github.io-fakeOS.git
 -   The project is hosted using the github pages
         Here's the link https://github.com/Srilekha25/fakeOS/index.html
