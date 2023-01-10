@@ -70,14 +70,14 @@ let imageResizerflex = document.getElementById("section__image-resizer--flex");
 
 ImageResizer.addEventListener("click", () => {
   console.log("coming inside image resizer when icon is clicked");
-  imageResizerflex.style.display="block";
-  //imageResizerModal.classList.add("section__image-resizer--form--display-mode");
+  //imageResizerModal.style.display="block";
+  imageResizerModal.classList.add("section__image-resizer--form--display-mode");
 });
 
 //Close the Image Resizer when X is clicked
 document.getElementById("button__close--align").addEventListener("click", () => {
-  imageResizerflex.style.display="none";
-  //imageResizerModal.classList.remove("section__image-resizer--form--display-mode");
+  //imageResizerModal.style.display="none";
+  imageResizerModal.classList.remove("section__image-resizer--form--display-mode");
 });
 
 //End of Image Resizer

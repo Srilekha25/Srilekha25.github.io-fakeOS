@@ -1,3 +1,202 @@
-.section__notepad--textarea{
+.landing-page{
+
+    .section__icons--flex {
+    .icon {
+      display: flex;
+      flex-direction: column;
+    //   width: 80px;
+    //   height: 80px;
+      border: 1px solid transparent;
+      //border-radius: 5px;
+      //text-align: center;
+      margin: 10px;
+      cursor: pointer;
+      //z-index: 1;
+    }
+
+    .icon img {
+      width: 48px;
+      height: 48px;
+    }
+
+    .icon p {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 0;
+      padding: 10px 0;
+    }
+  }
+
+  //Styles for Temperature Convertor
+.section__temp-convertor--form {
     display: none;
+
+    &--display-mode {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      
+
+      .section__icon1--header{
+
+        .section__temp-convertor--title {
+            top: 0%;
+            left: 0%;
+            background-color: #2479da;
+            font-size: 20px;
+            padding: 5px;
+            color: white;
+            margin-bottom: 25px;            
+          }
+
+          .button__close--align {
+            color: #aaaaaa;
+            float: right;
+            font-size: 23px;
+            font-weight: bold;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+          }
+          .button__close--align:hover,
+          .button__close--align:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: red;
+          }
+
+      }
+
+      
+
+      .container__temp-convertor-content--flex {
+        background-color: #fefefe;
+        border: 1px solid #888;
+        width: 50vw;
+        height: 50vh;
+        position:absolute;
+        margin-top: 20%;
+        align-items: center;
+
+        .section__temp-convertor--align {
+          display: grid;
+          row-gap: 10px;
+          padding: 10px;
+          border: 1px solid transparent;
+          border-radius: 10px;
+        }
+        .submit {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .message{
+            text-align: center;
+        }
+      }
+    }
+  }
+  //Styles for notepad
+  .section__notepad--form {
+   display: none;
+   
+
+    &--display-mode {
+      
+
+      .section__notepad--title {
+        top: 0%;
+        left: 0%;
+        width: 100vw;
+        height: 100vh;
+        background-color: #2479da;
+        font-size: 20px;
+        padding: 5px;
+        color: black;
+        margin-bottom: 5px;
+
+        
+      }
+      .textarea {
+        background-color: #fefefe;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+      }
+
+      .button__close--align {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+      }
+      .button__close--align:hover,
+      .button__close--align:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: red;
+      }
+    }
+  }
+  //Styles for Image Resizer
+
+  .section__image-resizer--form {
+    display: none;
+
+    &--display-mode {
+      display: flex;
+      .section__image-resizer--flex {
+        background-color: #fefefe;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        .button__close--align {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          position: fixed;
+          top: 0%;
+          right: 0%;
+        }
+        .button__close--align:hover,
+        .button__close--align:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+          background-color: red;
+        }
+
+        .resizer {
+          font-family: sans-serif;
+          font-weight: bold;
+          padding: 20px;
+          width: 500px;
+        }
+
+        .dimensions {
+          padding: 20px 0;
+        }
+
+        .resizer__input {
+          width: 75px;
+          padding: 5px;
+        }
+
+        .resizer__canvas {
+          max-width: 100%;
+        }
+      }
+    }
+  }
 }

@@ -1,6 +1,6 @@
 //Displaying the Clock
 // Update the clock every second
-const clockContainer = document.querySelector("#section_clock_align");
+const clockContainer = document.querySelector("#section__clock--align");
 
 function updateClock() {
   const now = new Date();
@@ -10,8 +10,8 @@ function updateClock() {
 setInterval(updateClock, 1000); 
 
 //To display container for start button
-const menuButton = document.getElementById("button_align");
-const menu = document.getElementById("section_menu_flex");
+const menuButton = document.getElementById("section__start-button--align");
+const menu = document.getElementById("section__menu--flex");
 
 menuButton.addEventListener("click", () => {
   menu.style.display = menu.style.display === "none" ? "flex" : "none";

@@ -41,13 +41,6 @@ form.addEventListener("submit", (event) => {
     appendElementWithText("div", messageArr, message);
   }
   document.querySelector("#Temperature").value = "";
-  // messageArr.pop();
-  // const deleteEverything = document.querySelector("#message");
-  // const notasks = document.querySelector("#notasks");
-  // if (notasks) {
-  //   deleteEverything.removeChild(notasks);
-  // }
-  //messageInHtml.style.display="none";
 });
 function fahrenheitToCelcius(fahrenheit) {
   return ((fahrenheit - 32) * 5) / 9;

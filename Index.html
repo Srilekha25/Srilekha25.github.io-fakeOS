@@ -16,19 +16,19 @@
   <body>
     <div class="screen" id="screen">
       <article class="landing-page">
-        <section class="section_wallpaper_align" id="section_wallpaper_align">
+        <section class="section__wallpaper--align" id="section__wallpaper--align">
           <img id="section__background--image" src="/Images/windows_xp_2.jpg" />
         </section>
 
         <!-- footer section -->
-        <footer class="footer_align">
+        <footer class="section__footer--align">
           <!-- Start Button -->
-          <button class="button_align" id="button_align" type="button">
+          <button class="section__start-button--align" id="section__start-button--align" type="button">
             <img src="/Images/start_image.jpg" />
           </button>
           <!-- Menu Items in the start button -->
-          <section class="section_menu_flex" id="section_menu_flex">
-            <div class="container_account-name_flex">
+          <section class="section__menu--flex" id="section__menu--flex">
+            <div class="container__account-name--flex">
               <div class="image" id="image">
                 <img src="/Images/me.png" />
                 <div class="program" id="program">
@@ -36,9 +36,9 @@
                 </div>
               </div>
             </div>
-            <section class="section_menuitems_flex">
-              <div class="container__menu-column1--flex">
-                <div class="menu__list--items">
+            <section class="section__menuitems--flex">
+              <div class="container__menuitems-column1--flex">
+                <!-- <div class="menu__list--items"> -->
                   <div class="label">
                     <div class="image" id="image">
                       <img src="/Images/internet_explorer.ico" />
@@ -57,9 +57,9 @@
                       <div class="program">Outlook Express</div>
                     </div>
                   </div>
-                </div>
+                <!-- </div> -->
 
-                <div class="menu__list--items2">
+                <div class="menu__list--items">
                   <div class="menu__list--item">
                     <img src="/Images/cmd-exe.png" />
                     <div class="text" id="text">Command Prompt</div>
@@ -91,8 +91,8 @@
                   </div>
                 </div>
               </div>
-              <div class="container_menu-column2_flex">
-                <div class="container_favorites_flex">
+              <div class="container__menuitems-column2--flex">
+                <div class="container__favorites--flex">
                   <div class="menu__list--item">
                     <img src="/Images/My Documents.ico" />
                     <div class="text" id="text">My Documents</div>
@@ -117,7 +117,7 @@
                     <div class="text" id="text">My Computer</div>
                   </div>
                 </div>
-                <div class="container_column2-item_flex">
+                <div class="container__menuitems-col2--flex">
                   <div class="menu__list--item">
                     <img src="/Images/Control Panel.ico" />
 
@@ -157,8 +157,8 @@
 
           <!-- clock  -->
           <section
-            class="section_clock_align"
-            id="section_clock_align"
+            class="section__clock--align"
+            id="section__clock--align"
           ></section>
         </footer>
 
@@ -183,17 +183,21 @@
           class="section__temp-convertor--form"
           id="section__temp-convertor--form"
         >
+
+        
         
           <div
             class="container__temp-convertor-content--flex"
             id="container__temp-convertor-content--flex"
           >
+          <div class="section__icon1--header">
             <div class="section__temp-convertor--title">
               Temperature Convertor
             </div>
             <button class="button__close--align" id="button__close--align">
               &times;
             </button>
+          </div>
 
             <div class="section__temp-convertor--align">
               <label for="Temperature">Temperature: </label>
@@ -215,7 +219,9 @@
                 <option value="fahrenheit" id="fahrenheit">fahrenheit</option>
               </select>
             </div>
-            <button type="submit" class="submit">submit</button>
+            <div class="submit">
+              <button type="submit">submit</button>
+            </div>
 
             <div class="message" id="message">
             </div>

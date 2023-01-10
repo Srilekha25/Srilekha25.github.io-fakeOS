@@ -3,208 +3,10 @@
 .screen {
   position: relative;
 
-  .section__icons--flex {
-    .icon {
-      display: flex;
-      flex-direction: column;
-      width: 80px;
-      height: 80px;
-      border: 1px solid transparent;
-      border-radius: 5px;
-      text-align: center;
-      margin: 10px;
-      cursor: pointer;
-      z-index: 1;
-    }
-
-    .icon img {
-      width: 48px;
-      height: 48px;
-    }
-
-    .icon p {
-      display: inline-flex;
-      font-size: 12px;
-      margin: 0;
-      padding: 10px 0;
-    }
-  }
-
-  //Styles for Temperature Convertor
-
-  .section__temp-convertor--form {
-    display: none;
-
-    &--display-mode {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: -75;
-
-      
-
-      .container__temp-convertor-content--flex {
-        background-color: #fefefe;
-        border: 1px solid #888;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0%;
-        left: 0%;
-
-        .section__temp-convertor--title {
-          top: 0%;
-          left: 0%;
-          background-color: #2479da;
-          font-size: 20px;
-          padding: 5px;
-          color: white;
-          margin-bottom: 5px;
-
-          
-        }
-
-        .section__temp-convertor--align {
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-          row-gap: 10px;
-          padding: 10px;
-          border: 1px solid transparent;
-          border-radius: 10px;
-          justify-items: start;
-        }
-
-        .button__close--align {
-          color: #aaaaaa;
-          float: right;
-          font-size: 23px;
-          font-weight: bold;
-          position: absolute;
-          top: 0%;
-          right: 0%;
-        }
-        .button__close--align:hover,
-        .button__close--align:focus {
-          color: #000;
-          text-decoration: none;
-          cursor: pointer;
-          background-color: red;
-        }
-
-        .submit {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          text-align: center;
-        }
-      }
-    }
-  }
-  //Styles for notepad
-  .section__notepad--form {
-   display: none;
-   
-
-    &--display-mode {
-      
-
-      .section__notepad--title {
-        top: 0%;
-        left: 0%;
-        width: 100vw;
-        height: 100vh;
-        background-color: #2479da;
-        font-size: 20px;
-        padding: 5px;
-        color: black;
-        margin-bottom: 5px;
-
-        
-      }
-      .textarea {
-        background-color: #fefefe;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0%;
-        left: 0%;
-      }
-
-      .button__close--align {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        position: fixed;
-        top: 0%;
-        right: 0%;
-      }
-      .button__close--align:hover,
-      .button__close--align:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-        background-color: red;
-      }
-    }
-  }
-  //Styles for Image Resizer
-
-  .section__image-resizer--form {
-    display: none;
-
-    &--display-mode {
-      .section__image-resizer--flex {
-        background-color: #fefefe;
-        //border: 1px solid #888;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0%;
-        left: 0%;
-        .button__close--align {
-          color: #aaaaaa;
-          float: right;
-          font-size: 28px;
-          font-weight: bold;
-          position: fixed;
-          top: 0%;
-          right: 0%;
-        }
-        .button__close--align:hover,
-        .button__close--align:focus {
-          color: #000;
-          text-decoration: none;
-          cursor: pointer;
-          background-color: red;
-        }
-
-        .resizer {
-          font-family: sans-serif;
-          font-weight: bold;
-          padding: 20px;
-          width: 500px;
-        }
-
-        .dimensions {
-          padding: 20px 0;
-        }
-
-        .resizer__input {
-          width: 75px;
-          padding: 5px;
-        }
-
-        .resizer__canvas {
-          max-width: 100%;
-        }
-      }
-    }
-  }
+  .landing-page{
 
   //Styles for footer
-  .footer_align {
+  .section__footer--align {
     background-color: #2479da;
     position: fixed;
     bottom: 0;
@@ -218,7 +20,7 @@
     flex-wrap: wrap;
     z-index: 1;
 
-    .button_align {
+    .section__start-button--align {
       padding: 0;
       margin: 0;
       line-height: 0;
@@ -228,7 +30,7 @@
       }
     }
 
-    .section_menu_flex {
+    .section__menu--flex {
       display: none;
       flex-direction: column;
       position: absolute;
@@ -241,7 +43,7 @@
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
       overflow: hidden;
 
-      .container_account-name_flex {
+      .container__account-name--flex {
         display: inline-flex;
         justify-content: space-between;
         background-color: #2479da;
@@ -264,13 +66,14 @@
         }
       }
 
-      .section_menuitems_flex {
+      .section__menuitems--flex {
         display: inline-flex;
         flex-direction: row;
 
-        .container__menu-column1--flex {
+
+        .container__menuitems-column1--flex {
           font-size: 18px;
-          .menu__list--items {
+          
             .label {
               display: flex;
               margin-left: 5px;
@@ -291,9 +94,8 @@
                 background-color: #2479da;
               }
             }
-          }
 
-          .menu__list--items2 {
+          .menu__list--items {
             .menu__list--item {
               display: flex;
               align-items: center;
@@ -324,10 +126,10 @@
           }
         }
 
-        .container_menu-column2_flex {
+        .container__menuitems-column2--flex {
           background-color: rgb(204, 203, 203);
           display: inline-block;
-          flex-direction: row;
+          flex-direction: column;
           align-items: center;
           text-align: left;
 
@@ -336,7 +138,7 @@
             height: 1.5rem;
           }
 
-          .container_favorites_flex {
+          .container__favorites--flex {
             display: inline-flex;
             flex-direction: column;
             margin-left: 2px;
@@ -353,7 +155,7 @@
               }
             }
           }
-          .container_column2-item_flex {
+          .container__menuitems-col2--flex {
             margin-left: 2px;
             padding: 5px;
             .menu__list--item {
@@ -372,11 +174,12 @@
       }
     }
 
-    .section_clock_align {
+    .section__clock--align {
       position: absolute;
       right: 0;
       color: white;
       padding: 10px;
     }
   }
+}
 }
