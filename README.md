@@ -30,11 +30,11 @@ This project done using design/image using CSS, add content via HTML and control
 ### JavaScript
 
 -   Js code is put into separate files
--   Your icons and menu should add event listener for the click event
+-   Your icons and menu are added event listeners for the click event
 
 ### Github
 
 -   Created a repo on github.
         Here's the link for github repo 'https://github.com/Srilekha25/fakeOS.git'
 -   The project is hosted using the github pages
-        Here's the link https://github.com/Srilekha25/fakeOS/index.html
+        Here's the link https://srilekha25.github.io/Srilekha25.github.io-fakeOS/
