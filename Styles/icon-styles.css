@@ -10,6 +10,10 @@
 .landing-page .section__icons--flex .icon img {
   width: 3rem;
   height: 3rem;
+  transition: 0.25s ease;
+}
+.landing-page .section__icons--flex .icon img:hover {
+  transform: scale(1.25);
 }
 .landing-page .section__icons--flex .icon p {
   font-size: 15px;
@@ -23,8 +27,6 @@
 .landing-page .section__temp-convertor--form--display-mode {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   z-index: 1;
   position: absolute;
 }
@@ -35,7 +37,7 @@
   color: white;
   margin-bottom: 25px;
 }
-.landing-page .section__temp-convertor--form--display-mode .section__icon1--header .button__close--align {
+.landing-page .section__temp-convertor--form--display-mode .section__icon1--header .button__icon1-close--align {
   color: #aaaaaa;
   float: right;
   font-size: 23px;
@@ -44,8 +46,8 @@
   top: 0%;
   right: 0%;
 }
-.landing-page .section__temp-convertor--form--display-mode .section__icon1--header .button__close--align:hover,
-.landing-page .section__temp-convertor--form--display-mode .section__icon1--header .button__close--align:focus {
+.landing-page .section__temp-convertor--form--display-mode .section__icon1--header .button__icon1-close--align:hover,
+.landing-page .section__temp-convertor--form--display-mode .section__icon1--header .button__icon1-close--align:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -81,26 +83,47 @@
   display: flex;
   justify-content: center;
   z-index: 1;
+  border: 1px solid transparent;
+  position: absolute;
 }
-.landing-page .section__notepad--form--display-mode .section__icon2--header .button__close--align {
-  color: #aaaaaa;
-  float: right;
-  font-size: 23px;
-  font-weight: bold;
+.landing-page .section__notepad--form--display-mode .section__textarea--grid {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-.landing-page .section__notepad--form--display-mode .section__icon2--header .button__close--align:hover,
-.landing-page .section__notepad--form--display-mode .section__icon2--header .button__close--align:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: red;
-}
-.landing-page .section__notepad--form--display-mode .textarea {
+.landing-page .section__notepad--form--display-mode .section__textarea--grid .textarea {
   background-color: #fefefe;
   border: 1px solid #888;
   width: 50vw;
   height: 50vh;
   align-items: center;
+}
+.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--flex {
+  display: flex;
+  background-color: #2479da;
+}
+.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--flex .section__icon2--title {
+  background-color: #2479da;
+  font-size: 23px;
+  padding: 5px;
+  color: white;
+  justify-content: space-between;
+}
+.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--flex .button__icon2-close--align {
+  color: #aaaaaa;
+  float: right;
+  font-size: 26px;
+  font-weight: bold;
+  position: absolute;
+  justify-content: space-between;
+  top: 0%;
+  right: 0%;
+}
+.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--flex .button__icon2-close--align:hover,
+.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--flex .button__icon2-close--align:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: red;
 }
 .landing-page .section__image-resizer--form {
   display: none;
@@ -120,7 +143,7 @@
   color: white;
   margin-bottom: 25px;
 }
-.landing-page .section__image-resizer--form--display-mode .button__close--align {
+.landing-page .section__image-resizer--form--display-mode .button__icon3-close--align {
   color: #aaaaaa;
   float: right;
   font-size: 23px;
@@ -129,8 +152,8 @@
   top: 0%;
   right: 0%;
 }
-.landing-page .section__image-resizer--form--display-mode .button__close--align:hover,
-.landing-page .section__image-resizer--form--display-mode .button__close--align:focus {
+.landing-page .section__image-resizer--form--display-mode .button__icon3-close--align:hover,
+.landing-page .section__image-resizer--form--display-mode .button__icon3-close--align:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

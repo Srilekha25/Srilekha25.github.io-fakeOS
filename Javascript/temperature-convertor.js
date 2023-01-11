@@ -64,7 +64,7 @@ TempConvertorIcon.addEventListener("click", () => {
 
 //Close the temperature convertor when X is clicked
 document
-  .getElementById("button__close--align")
+  .getElementById("button__icon1-close--align")
   .addEventListener("click", () => {
 
     tempConvertorModal.classList.remove(

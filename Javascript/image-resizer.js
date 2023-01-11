@@ -74,7 +74,7 @@ ImageResizer.addEventListener("click", () => {
 });
 
 //Close the Image Resizer when X is clicked
-document.getElementById("button__close--align").addEventListener("click", () => {
+document.getElementById("button__icon3-close--align").addEventListener("click", () => {
   imageResizerModal.classList.remove("section__image-resizer--form--display-mode");
 });
 
