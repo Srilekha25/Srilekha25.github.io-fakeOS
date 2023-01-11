@@ -31,8 +31,8 @@ onTheScreen.addEventListener("click", event =>{
 
 //Enabling drag and drop
 //Source code extracted from https://www.w3schools.com/howto/howto_js_draggable.asp
-dragElement(document.getElementById("section__temp-convertor--form"));
-dragElement(document.getElementById("section__notepad--form"));
+//dragElement(document.getElementById("section__temp-convertor--form"));
+//dragElement(document.getElementById("section__notepad--form"));
 dragElement(document.getElementById("section__image-resizer--form"));
 
 function dragElement(elmnt) {

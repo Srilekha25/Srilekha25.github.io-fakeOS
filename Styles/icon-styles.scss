@@ -1,6 +1,5 @@
 .landing-page {
   position: relative;
-  align-items: center;
   .section__icons--flex {
     .icon {
       display: flex;
@@ -31,10 +30,12 @@
     display: none;
 
     &--display-mode {
+      //position: absolute;
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
       z-index: 1;
-      position: absolute;
 
       .section__icon1--header {
         .section__icon1--title {
@@ -97,6 +98,7 @@
       z-index: 1;
       border: 1px solid transparent;
       position: absolute;
+      margin-left: 25%;
 
       .section__icon2--flex {
       .section__icon2--header {
