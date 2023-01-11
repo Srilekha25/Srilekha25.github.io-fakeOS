@@ -30,10 +30,12 @@
     display: none;
 
     &--display-mode {
+      //position: absolute;
       display: flex;
       flex-direction: column;
       z-index: 1;
-      position: absolute;
+      justify-content: center;
+      align-items: center;
 
       .section__icon1--header {
         .section__icon1--title {
@@ -91,11 +93,14 @@
     display: none;
 
     &--display-mode {
+      position: absolute;
+      margin-left: 25%;
       display: flex;
       justify-content: center;
+      align-items: center;
+      text-align: center;
       z-index: 1;
       border: 1px solid transparent;
-      position: absolute;
 
       .section__icon2--flex {
       .section__icon2--header {

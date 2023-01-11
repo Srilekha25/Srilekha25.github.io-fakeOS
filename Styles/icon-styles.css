@@ -28,7 +28,8 @@
   display: flex;
   flex-direction: column;
   z-index: 1;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
 }
 .landing-page .section__temp-convertor--form--display-mode .section__icon1--header .section__icon1--title {
   background-color: #2479da;
@@ -80,11 +81,14 @@
   display: none;
 }
 .landing-page .section__notepad--form--display-mode {
+  position: absolute;
+  margin-left: 25%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   z-index: 1;
   border: 1px solid transparent;
-  position: absolute;
 }
 .landing-page .section__notepad--form--display-mode .section__icon2--flex .section__icon2--header {
   display: flex;
