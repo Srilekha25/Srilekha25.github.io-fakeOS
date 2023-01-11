@@ -30,9 +30,3 @@ onTheScreen.addEventListener("click", event =>{
 
 
 
-
-
-
-
-
-
