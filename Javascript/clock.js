@@ -2,7 +2,7 @@
 // Update the clock every second
 const clockContainer = document.querySelector("#section__clock--align");
 
-function updateClock() {
+const updateClock = () => {
   const now = new Date();
   clockContainer.innerHTML = now.toLocaleTimeString();
 }
@@ -32,7 +32,7 @@ onTheScreen.addEventListener("click", event =>{
 //Enabling drag and drop
 //Source code extracted from https://www.w3schools.com/howto/howto_js_draggable.asp
 dragElement(document.getElementById("section__temp-convertor--form"));
-//dragElement(document.getElementById("section__notepad--form"));
+dragElement(document.getElementById("section__notepad--form"));
 dragElement(document.getElementById("section__image-resizer--form"));
 
 function dragElement(elmnt) {

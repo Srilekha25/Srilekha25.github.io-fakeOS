@@ -11,6 +11,6 @@ notepadIcon.addEventListener("click", () => {
 });
 
 //Close the Image Resizer when X is clicked
-document.getElementById("button__close--align").addEventListener("click", () => {
+document.getElementById("button__icon2-close--align").addEventListener("click", () => {
   notepadModal.classList.remove("section__notepad--form--display-mode");
 });

@@ -11,6 +11,10 @@
     .icon img {
       width: 3rem;
       height: 3rem;
+      transition: 0.25s ease;
+      &:hover {
+        transform: scale(1.25);
+      }
     }
 
     .icon p {
@@ -28,8 +32,8 @@
     &--display-mode {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      //align-items: center;
+      //justify-content: center;
       z-index: 1;
       position: absolute;
 
@@ -41,7 +45,7 @@
           color: white;
           margin-bottom: 25px;
         }
-        .button__close--align {
+        .button__icon1-close--align {
           color: #aaaaaa;
           float: right;
           font-size: 23px;
@@ -50,8 +54,8 @@
           top: 0%;
           right: 0%;
         }
-        .button__close--align:hover,
-        .button__close--align:focus {
+        .button__icon1-close--align:hover,
+        .button__icon1-close--align:focus {
           color: #000;
           text-decoration: none;
           cursor: pointer;
@@ -91,47 +95,55 @@
     &--display-mode {
       display: flex;
       justify-content: center;
-      z-index: 1;      
-      
-      .section__icon2--header {
-        // .section__icon2--title {
-        //   display: flex;
-        //   background-color: #2479da;
-        //   font-size: 23px;
-        //   padding: 5px;
-        //   color: white;
-        //   justify-content: space-between;
-        //   position: absolute;
-        // }
+      z-index: 1;
+      border: 1px solid transparent;
+      position: absolute;
 
-        .button__close--align {
-          color: #aaaaaa;
-          float: right;
-          font-size: 23px;
-          font-weight: bold;
-          // position: absolute;
-          // top: 0%;
-          // right: 0%;
-        }
-        .button__close--align:hover,
-        .button__close--align:focus {
-          color: #000;
-          text-decoration: none;
-          cursor: pointer;
-          background-color: red;
-        }
-        }
-        .textarea{
+      .section__textarea--grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        .textarea {
           background-color: #fefefe;
           border: 1px solid #888;
           width: 50vw;
           height: 50vh;
-          //position: absolute;
           align-items: center;
-              
-            }
+        }
       }
-    
+
+      .section__icon2--header {
+        .section__icon2--flex {
+          display: flex;
+          background-color: #2479da;
+
+          .section__icon2--title {
+            background-color: #2479da;
+            font-size: 23px;
+            padding: 5px;
+            color: white;
+            justify-content: space-between;
+          }
+
+          .button__icon2-close--align {
+            color: #aaaaaa;
+            float: right;
+            font-size: 26px;
+            font-weight: bold;
+            position: absolute;
+            justify-content: space-between;
+            top: 0%;
+            right: 0%;
+          }
+          .button__icon2-close--align:hover,
+          .button__icon2-close--align:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: red;
+          }
+        }
+      }
+    }
   }
   //Styles for Image Resizer
 
@@ -153,7 +165,7 @@
         color: white;
         margin-bottom: 25px;
       }
-      .button__close--align {
+      .button__icon3-close--align {
         color: #aaaaaa;
         float: right;
         font-size: 23px;
@@ -162,8 +174,8 @@
         top: 0%;
         right: 0%;
       }
-      .button__close--align:hover,
-      .button__close--align:focus {
+      .button__icon3-close--align:hover,
+      .button__icon3-close--align:focus {
         color: #000;
         text-decoration: none;
         cursor: pointer;
