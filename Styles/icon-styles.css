@@ -1,5 +1,6 @@
 .landing-page {
   position: relative;
+  align-items: center;
 }
 .landing-page .section__icons--flex .icon {
   display: flex;
@@ -127,8 +128,6 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   z-index: 1;
 }
 .landing-page .section__image-resizer--form--display-mode .section__icon3--title {
