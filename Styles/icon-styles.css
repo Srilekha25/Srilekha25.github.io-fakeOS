@@ -86,29 +86,18 @@
   border: 1px solid transparent;
   position: absolute;
 }
-.landing-page .section__notepad--form--display-mode .section__textarea--grid {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.landing-page .section__notepad--form--display-mode .section__textarea--grid .textarea {
-  background-color: #fefefe;
-  border: 1px solid #888;
-  width: 50vw;
-  height: 50vh;
-  align-items: center;
-}
-.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--flex {
+.landing-page .section__notepad--form--display-mode .section__icon2--flex .section__icon2--header {
   display: flex;
   background-color: #2479da;
 }
-.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--flex .section__icon2--title {
+.landing-page .section__notepad--form--display-mode .section__icon2--flex .section__icon2--header .section__icon2--title {
   background-color: #2479da;
   font-size: 23px;
   padding: 5px;
   color: white;
   justify-content: space-between;
 }
-.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--flex .button__icon2-close--align {
+.landing-page .section__notepad--form--display-mode .section__icon2--flex .section__icon2--header .button__icon2-close--align {
   color: #aaaaaa;
   float: right;
   font-size: 26px;
@@ -118,12 +107,18 @@
   top: 0%;
   right: 0%;
 }
-.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--flex .button__icon2-close--align:hover,
-.landing-page .section__notepad--form--display-mode .section__icon2--header .section__icon2--flex .button__icon2-close--align:focus {
+.landing-page .section__notepad--form--display-mode .section__icon2--flex .section__icon2--header .button__icon2-close--align:hover,
+.landing-page .section__notepad--form--display-mode .section__icon2--flex .section__icon2--header .button__icon2-close--align:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
   background-color: red;
+}
+.landing-page .section__notepad--form--display-mode .section__icon2--flex .section__textarea--grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 50vw;
+  height: 50vh;
 }
 .landing-page .section__image-resizer--form {
   display: none;
