@@ -32,8 +32,6 @@
     &--display-mode {
       display: flex;
       flex-direction: column;
-      //align-items: center;
-      //justify-content: center;
       z-index: 1;
       position: absolute;
 
@@ -99,20 +97,8 @@
       border: 1px solid transparent;
       position: absolute;
 
-      .section__textarea--grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        .textarea {
-          background-color: #fefefe;
-          border: 1px solid #888;
-          width: 50vw;
-          height: 50vh;
-          align-items: center;
-        }
-      }
-
+      .section__icon2--flex {
       .section__icon2--header {
-        .section__icon2--flex {
           display: flex;
           background-color: #2479da;
 
@@ -141,6 +127,12 @@
             cursor: pointer;
             background-color: red;
           }
+        }
+        .section__textarea--grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          width: 50vw;
+          height: 50vh;
         }
       }
     }
