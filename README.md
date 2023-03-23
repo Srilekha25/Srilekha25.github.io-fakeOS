@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project done using design/image using CSS, add content via HTML and control the interactive elements via JavaScript.\
+This project done using design/image using CSS, add content via HTML and control the interactive elements via JavaScript.
 
 ### The design is going to be that of an operating system.
 
@@ -23,14 +23,13 @@ This project done using design/image using CSS, add content via HTML and control
         1. Image Resizer
         2. Temperature Convertor 
         3. Notepad
--   Enabled dragability for the forms. 
 -   Menu contains a flex with content inside it.
 -   Apps are able to contain text, an image and a form.
 
 ### JavaScript
 
 -   Js code is put into separate files
--   Your icons and menu are added event listeners for the click event
+-   The icons and menu are added event listeners for the click event
 
 ### Github
 
